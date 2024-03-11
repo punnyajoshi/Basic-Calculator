@@ -1,24 +1,19 @@
-//import java.io.*;
 import java.lang.*;
-//import java.lang.Math;
 import java.util.Scanner;
 
 // Driver class
-public class Calculator2
+public class Calculator
 {
     // main function
     public static void main(String[] args) {
-// Stores two numbers
-        double num1, num2;
-// Take input from the user
+        double number1, number2;
         Scanner sc = new Scanner(System.in);
         char choice;
-
         do {
             System.out.println("Enter the numbers:");
 // Take the inputs
-            num1 = sc.nextDouble();
-            num2 = sc.nextDouble();
+            number1 = sc.nextDouble();
+            number2 = sc.nextDouble();
             System.out.println("Enter + for Addition ");
             System.out.println("Enter - for Subtraction ");
             System.out.println("Enter * for Multiplication ");
@@ -29,19 +24,19 @@ public class Calculator2
             switch (op) {
 // case to add two numbers
                 case '+':
-                    result = num1 + num2;
+                    result = number1 + number2;
                     break;
 // case to subtract two numbers
                 case '-':
-                    result = num1 - num2;
+                    result = number1 - number2;
                     break;
 // case to multiply two numbers
                 case '*':
-                    result = num1 * num2;
+                    result = number1 * number2;
                     break;
 // case to divide two numbers
                 case '/':
-                    result = num1 / num2;
+                    result = number1 / number2;
                     break;
 
                 case 'X':
@@ -55,7 +50,7 @@ public class Calculator2
             System.out.println("The final result:");
             System.out.println();
 // print the final result
-            System.out.println(num1 + " " + op + " " + num2 + " = " + result);
+            System.out.println(number1 + " " + op + " " + number2 + " = " + result);
 
             System.out.println("Do you want to perform another calculation? (Y/N)");
             choice = sc.next().charAt(0);
